@@ -1,9 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"version": "1.0.0",
+	"id": "Notex.Enforcers",
+	"name": "Enforcers",
+	"description": "Makes all NPCs enforcers who instantly spot you",
+	"authors": ["Notex"],
+	"frameworkVersion": "2.33.26",
+	"contentFolders": ["content"],
+	"options": []
 }
