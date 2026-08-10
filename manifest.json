@@ -1,11 +1,12 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.0.0",
+	"version": "0.2.0",
 	"id": "Notex.Enforcers",
 	"name": "Enforcers",
 	"description": "Makes all NPCs enforcers who instantly spot you",
 	"authors": ["Notex"],
-	"frameworkVersion": "2.33.26",
+	"frameworkVersion": "2.33.41",
 	"contentFolders": ["content"],
-	"options": []
+	"options": [],
+	"updateCheck": "https://github.com/NotexMods/h3-enforcers/releases/latest/download/updates.json"
 }
