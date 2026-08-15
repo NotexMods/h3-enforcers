@@ -10,7 +10,7 @@
 	"options": [
 		{
 			"name": "Instant detection",
-			"tooltip": "NPCs will instantly spot you (0.1 seconds)",
+			"tooltip": "NPCs will instantly spot you (0.001 seconds)",
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"contentFolders": ["instant_detection"]
