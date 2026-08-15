@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"id": "Notex.SuperEnforcers",
 	"name": "Super Enforcers",
 	"description": "Makes all NPCs enforcers who can optionally instantly spot you",
@@ -16,5 +16,5 @@
 			"contentFolders": ["instant_detection"]
 		}
 	],
-	"updateCheck": "https://github.com/NotexMods/h3-enforcers/releases/latest/download/updates.json"
+	"updateCheck": "https://github.com/NotexMods/h3-super-enforcers/releases/latest/download/updates.json"
 }
