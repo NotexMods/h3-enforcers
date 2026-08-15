@@ -1,0 +1,613 @@
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"174effdd62809152",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rSharedSensor",
+						"value": "cafea83ae76069d9"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b8869ab3fd651b3c",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rSharedSensor",
+						"value": "cafe978212abf747"
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe978212abf747",
+				{
+					"parent": "d35decb0584ad3d4",
+					"name": "Default_gcHelper_Difficulty_SharedSensor",
+					"factory": "[assembly:/_pro/design/gamecore/gamecorehelpers_difficulty.template?/gchelper_difficulty_sharedsensor_default.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/gamecorehelpers_difficulty.template?/gchelper_difficulty_sharedsensor_default.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_fAttentionDecreaseTime": {
+							"type": "float32",
+							"value": 0.5
+						},
+						"m_TrespassingAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_TrespassingPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fTrespassingPeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_fTrespassingAttractionRunPenalty": {
+							"type": "float32",
+							"value": 1.5
+						},
+						"m_fDisguiseFollowTime": {
+							"type": "float32",
+							"value": 15.0
+						},
+						"m_VisibilitySetting": {
+							"type": "TArray<ZSharedSensorDef.SVisibilitySetting>",
+							"value": [
+								{
+									"m_eSensitivity": "APS_AMBIENT_DEAFBLIND",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 0.0,
+									"m_fPeripheralAngleWhileMoving": 0.0,
+									"m_fPeripheralHigh": 0.0,
+									"m_fPeripheralLow": 0.0,
+									"m_fFocusConeWidthAngle": 0.0,
+									"m_fFocusConeHeightAngle": 0.0,
+									"m_fFocusConeRange": 0.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT_SLEEPING",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 0.0,
+									"m_fPeripheralAngleWhileMoving": 0.0,
+									"m_fPeripheralHigh": 0.0,
+									"m_fPeripheralLow": 0.0,
+									"m_fFocusConeWidthAngle": 0.0,
+									"m_fFocusConeHeightAngle": 0.0,
+									"m_fFocusConeRange": 0.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT_PREOCCUPIED",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 130.0,
+									"m_fPeripheralAngleWhileMoving": 130.0,
+									"m_fPeripheralHigh": 1.0,
+									"m_fPeripheralLow": 2.0,
+									"m_fFocusConeWidthAngle": 45.0,
+									"m_fFocusConeHeightAngle": 20.0,
+									"m_fFocusConeRange": 6.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 3.0,
+									"m_fPeripheralLow": 8.0,
+									"m_fFocusConeWidthAngle": 60.0,
+									"m_fFocusConeHeightAngle": 60.0,
+									"m_fFocusConeRange": 25.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_ALERT_LOW",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 3.0,
+									"m_fPeripheralLow": 8.0,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 60.0,
+									"m_fFocusConeRange": 25.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_ALERT",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 25.0,
+									"m_fPeripheralLow": 25.0,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 90.0,
+									"m_fFocusConeRange": 35.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_COMBAT",
+									"m_fCloseRange": 0.5,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 25.0,
+									"m_fPeripheralLow": 25.0,
+									"m_fFocusConeWidthAngle": 135.0,
+									"m_fFocusConeHeightAngle": 90.0,
+									"m_fFocusConeRange": 50.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_SPIDER_SENSE",
+									"m_fCloseRange": 0.5,
+									"m_fPeripheralAngle": 150.0,
+									"m_fPeripheralAngleWhileMoving": 150.0,
+									"m_fPeripheralHigh": 2.0,
+									"m_fPeripheralLow": 1.2999999523162842,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 50.0,
+									"m_fFocusConeRange": 30.0,
+									"m_fFocusConeBackWidth": 4.0
+								}
+							]
+						},
+						"m_HuntedAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_HuntedPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fHuntedPeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_fHuntedAttractionRunPenalty": {
+							"type": "float32",
+							"value": 1.5
+						},
+						"m_fDisguiseAttractionDistanceInCrowdFactor": {
+							"type": "float32",
+							"value": 1.0
+						},
+						"m_fDisguiseAttractionTimeInCrowdFactor": {
+							"type": "float32",
+							"value": 1.0
+						},
+						"m_DisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_DisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fDisguisePeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_DynamicDisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_DynamicDisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_MurderDisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_MurderDisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_aMurderEvents": {
+							"type": "TArray<EAISharedEventType>",
+							"value": [
+								"AISET_DynamicEnforcer_SeenMurderVictimHeardGunshot",
+								"AISET_DynamicEnforcer_DeadlyThrowVictim",
+								"AISET_DynamicEnforcer_PacifyingThrowVictim",
+								"AISET_DynamicEnforcer_SeenMurderVictimNotHeardGunshot",
+								"AISET_DynamicEnforcer_MurderAttempt"
+							]
+						},
+						"m_AgilityAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_AgilityPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fMinAttentionToForceLookAt": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_fMinAttentionToForceLookAtIfIncreasing": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_fSightReactionMinAttention": {
+							"type": "float32",
+							"value": 0.3499999940395355
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea83ae76069d9",
+				{
+					"parent": "d35decb0584ad3d4",
+					"name": "Easy_gcHelper_Difficulty_SharedSensor",
+					"factory": "[assembly:/_pro/design/gamecore/gamecorehelpers_difficulty.template?/gchelper_difficulty_sharedsensor_default.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/gamecorehelpers_difficulty.template?/gchelper_difficulty_sharedsensor_default.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_fAttentionDecreaseTime": {
+							"type": "float32",
+							"value": 0.5
+						},
+						"m_TrespassingAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_TrespassingPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fTrespassingPeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_fTrespassingAttractionRunPenalty": {
+							"type": "float32",
+							"value": 1.5
+						},
+						"m_fDisguiseFollowTime": {
+							"type": "float32",
+							"value": 15.0
+						},
+						"m_VisibilitySetting": {
+							"type": "TArray<ZSharedSensorDef.SVisibilitySetting>",
+							"value": [
+								{
+									"m_eSensitivity": "APS_AMBIENT_DEAFBLIND",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 0.0,
+									"m_fPeripheralAngleWhileMoving": 0.0,
+									"m_fPeripheralHigh": 0.0,
+									"m_fPeripheralLow": 0.0,
+									"m_fFocusConeWidthAngle": 0.0,
+									"m_fFocusConeHeightAngle": 0.0,
+									"m_fFocusConeRange": 0.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT_SLEEPING",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 0.0,
+									"m_fPeripheralAngleWhileMoving": 0.0,
+									"m_fPeripheralHigh": 0.0,
+									"m_fPeripheralLow": 0.0,
+									"m_fFocusConeWidthAngle": 0.0,
+									"m_fFocusConeHeightAngle": 0.0,
+									"m_fFocusConeRange": 0.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT_PREOCCUPIED",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 130.0,
+									"m_fPeripheralAngleWhileMoving": 130.0,
+									"m_fPeripheralHigh": 1.0,
+									"m_fPeripheralLow": 2.0,
+									"m_fFocusConeWidthAngle": 45.0,
+									"m_fFocusConeHeightAngle": 20.0,
+									"m_fFocusConeRange": 6.0,
+									"m_fFocusConeBackWidth": 4.0
+								},
+								{
+									"m_eSensitivity": "APS_AMBIENT",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 3.0,
+									"m_fPeripheralLow": 8.0,
+									"m_fFocusConeWidthAngle": 60.0,
+									"m_fFocusConeHeightAngle": 60.0,
+									"m_fFocusConeRange": 25.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_ALERT_LOW",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 3.0,
+									"m_fPeripheralLow": 8.0,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 60.0,
+									"m_fFocusConeRange": 25.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_ALERT",
+									"m_fCloseRange": 0.0,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 25.0,
+									"m_fPeripheralLow": 25.0,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 90.0,
+									"m_fFocusConeRange": 35.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_COMBAT",
+									"m_fCloseRange": 0.5,
+									"m_fPeripheralAngle": 190.0,
+									"m_fPeripheralAngleWhileMoving": 170.0,
+									"m_fPeripheralHigh": 25.0,
+									"m_fPeripheralLow": 25.0,
+									"m_fFocusConeWidthAngle": 135.0,
+									"m_fFocusConeHeightAngle": 90.0,
+									"m_fFocusConeRange": 50.0,
+									"m_fFocusConeBackWidth": 10.0
+								},
+								{
+									"m_eSensitivity": "APS_SPIDER_SENSE",
+									"m_fCloseRange": 0.5,
+									"m_fPeripheralAngle": 150.0,
+									"m_fPeripheralAngleWhileMoving": 150.0,
+									"m_fPeripheralHigh": 2.0,
+									"m_fPeripheralLow": 1.2999999523162842,
+									"m_fFocusConeWidthAngle": 120.0,
+									"m_fFocusConeHeightAngle": 50.0,
+									"m_fFocusConeRange": 30.0,
+									"m_fFocusConeBackWidth": 4.0
+								}
+							]
+						},
+						"m_HuntedAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_HuntedPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fHuntedPeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_fHuntedAttractionRunPenalty": {
+							"type": "float32",
+							"value": 1.5
+						},
+						"m_fDisguiseAttractionDistanceInCrowdFactor": {
+							"type": "float32",
+							"value": 1.0
+						},
+						"m_fDisguiseAttractionTimeInCrowdFactor": {
+							"type": "float32",
+							"value": 1.0
+						},
+						"m_DisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_DisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fDisguisePeripheralAngle": {
+							"type": "float32",
+							"value": 40.0
+						},
+						"m_DynamicDisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_DynamicDisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_MurderDisguiseAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_MurderDisguisePeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_aMurderEvents": {
+							"type": "TArray<EAISharedEventType>",
+							"value": [
+								"AISET_DynamicEnforcer_SeenMurderVictimHeardGunshot",
+								"AISET_DynamicEnforcer_DeadlyThrowVictim",
+								"AISET_DynamicEnforcer_PacifyingThrowVictim",
+								"AISET_DynamicEnforcer_SeenMurderVictimNotHeardGunshot",
+								"AISET_DynamicEnforcer_MurderAttempt"
+							]
+						},
+						"m_AgilityAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_AgilityPeripheralAttentionDuration": {
+							"type": "TArray<SVector2>",
+							"value": [
+								{ "x": 5.0, "y": 0.1 },
+								{ "x": 10.0, "y": 0.1 },
+								{ "x": 15.0, "y": 0.1 },
+								{ "x": 20.0, "y": 0.1 },
+								{ "x": 25.0, "y": 0.1 }
+							]
+						},
+						"m_fMinAttentionToForceLookAt": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_fMinAttentionToForceLookAtIfIncreasing": {
+							"type": "float32",
+							"value": 0.25
+						},
+						"m_fSightReactionMinAttention": {
+							"type": "float32",
+							"value": 0.3499999940395355
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

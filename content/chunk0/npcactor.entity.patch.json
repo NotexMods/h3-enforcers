@@ -1,0 +1,105 @@
+{
+	"tempHash": "00DDCC74AD917CAA",
+	"tbluHash": "003321F66074B4AB",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe1c3028919ac4",
+				{
+					"parent": "cafea5e292fe095e",
+					"name": "AIDynamicEnforcerEvent",
+					"factory": "[modules:/zaidynamicenforcerevententity.class].pc_entitytype",
+					"blueprint": "[modules:/zaidynamicenforcerevententity.class].pc_entityblueprint",
+					"properties": {
+						"m_eventType": {
+							"type": "EAISharedEventType",
+							"value": "AISET_DynamicEnforcer_SuspiciousMovement"
+						},
+						"m_fRange": { "type": "float32", "value": -1 },
+						"m_rLocation": {
+							"type": "SEntityTemplateReference",
+							"value": null
+						},
+						"m_rTarget": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea5e292fe095e",
+				{
+					"parent": "0594561be5ddfb63",
+					"name": "Super Enforcer",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe460709372b7d",
+				{
+					"parent": "cafea5e292fe095e",
+					"name": "GameEventListener_GameplayStart",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eEvent": {
+							"type": "EGameEventType",
+							"value": "GET_GameplayStart"
+						}
+					},
+					"events": {
+						"EventOccurred": { "Renew": ["cafe1c3028919ac4"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea2c3ad8bceb4",
+				{
+					"parent": "cafea5e292fe095e",
+					"name": "ActorKnowledgeCondition_DynamicEnforcer_SuspiciousMovement",
+					"factory": "[modules:/zactorknowledgecondition.class].pc_entitytype",
+					"blueprint": "[modules:/zactorknowledgecondition.class].pc_entityblueprint",
+					"properties": {
+						"m_eMonitoredSharedEvent": {
+							"type": "EAISharedEventType",
+							"value": "AISET_DynamicEnforcer_SuspiciousMovement"
+						},
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe331766a73fda",
+				{
+					"parent": "cafea5e292fe095e",
+					"name": "ValueBool_Changed",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafea2c3ad8bceb4"
+						}
+					},
+					"events": {
+						"OnFalse": { "Renew": ["cafe1c3028919ac4"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
