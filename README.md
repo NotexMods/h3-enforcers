@@ -4,4 +4,4 @@ Makes all NPCs enforcers who can optionally instantly spot you
 
 ---
 
-`Notex.SuperEnforcers` v1.0.0, by Notex. This README was automatically generated from the mod's manifest.
+`Notex.SuperEnforcers` v1.1.0, by Notex. This README was automatically generated from the mod's manifest.
